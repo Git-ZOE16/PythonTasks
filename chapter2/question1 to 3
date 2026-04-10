@@ -1,0 +1,23 @@
+NO1
+
+Given x = 2 and y = 3:
+ a) x = 2
+ b) Value of 2 + 2 is 4
+ c) x = (This will only prints the string 'x =')
+ d) this will print 5 = 5
+
+NO2
+
+This will only print string values because the integer values are not initialized.
+
+we should have something like: rating = int(input('Enter an integer rating between 1 and 10'))
+after it is been converted to int.
+
+NO3
+
+if grade >= 90:
+    print('Congratulations! Your grade of' 'grade' got you A in this course')
+
+
+
+
