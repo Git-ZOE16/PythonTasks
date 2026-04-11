@@ -1,0 +1,15 @@
+Number 10
+
+Flow chart Description
+
+Steps
+
+1. Start (Oval shape)
+
+2. Input (Asking for student mark) (parallelogram shape)
+
+3. Decision (is mark >= 50?)      (Diamond Shape)
+             (Yes) output is "pass" (parallelogram shape)
+             (No)  output is "fail" (parallelogram shape)
+
+4. End (oval shape)

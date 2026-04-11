@@ -1,0 +1,17 @@
+Number 2
+
+Algorithm for a student crossing the road with Decision and repetition steps e.g (if/else  loop)
+
+Step1- Student Standing by the road
+Step2- Student is waiting to cross the road
+Step3- Student is checking the traffic signs
+Step4- Traffic Sign is on Green
+Step5- While traffic sign is yet to turn red, Student continue waiting ( repetition/Loop)
+Step6- (if/else Condition): if the traffic sign is Red, student cross the road
+                            else student will wait
+Step7- Traffic sign turns Green
+Step8- The road is safe for student to cross
+Step9- Student cross the road
+
+                            
+

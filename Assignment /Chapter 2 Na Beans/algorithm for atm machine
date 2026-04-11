@@ -1,0 +1,32 @@
+Number 4
+
+Algorithm for ATM MACHINE
+
+Step1- Walk to the ATM 
+Step2- Insert ATM card
+Step3- Select preffered language
+Step4- Enter ATM pin 
+Step5- Select withdrawal choice
+Step6- Select account type
+Step7- Enter the amount to withdraw
+Step8- Collect cash from the ATM slot
+Step9- Stop transaction
+Step10- Take ATM card
+
+INPUTED DATAS
+1. ATM Card
+2. ATM PIN
+3. Amount of cash
+4. Yes/No intructions
+
+DECISIONS
+1. If ATM card is in good condition to run transaction
+2. Validity of ATM card Pin 
+3. Comparing the amount in the account with withdrawal amount, then make decision to dispense or not.
+
+POSSIBLE OUTPUTS
+1. Validity of informations and datas
+2. Dispensing of cash
+3. Rejection/dispensing of ATM Card
+
+               
