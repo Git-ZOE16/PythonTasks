@@ -1,5 +1,5 @@
 menu = """
-MENU
+    MENU
 1. PhoneBook
 2. Messages
 3. Chat
@@ -19,7 +19,7 @@ select an option
 
 #PHONE_BOOK_MENU
 phone_book_menu = """
-PHONEBOOK
+        PHONEBOOK
     1. Search
     2. Service Nos
     3. Add name
@@ -31,18 +31,19 @@ PHONEBOOK
     9. Speed dials
     10. Voice tags
     select an option
+    0 to return
     """
 
 #PHONE_BOOK_OPTION_SUBMENU
-phone_book_option_menu = """
-options
+phone_book_options = """
+        options
     1. Type of View
     2. Memory status
     """
 
 #PHONE_MESSAGE_MENU
-phone_message_menu = """
-MESSAGES
+message_menu = """
+        MESSAGES
     1. Write Messages
     2. Inbox 
     3. Outbox
@@ -58,7 +59,7 @@ MESSAGES
 
 #MESSAGE_SETTINGS_SUBMENU
 message_settings_menu = """
-MESSAGE_SETTINGS
+        MESSAGE_SETTINGS
     1. Set1
     2. Common
     select an option
@@ -66,7 +67,7 @@ MESSAGE_SETTINGS
 
 #SET1_OPTION_SUBMENU
 set1_menu = """
-SET1_OPTIONS
+        SET1_OPTIONS
     1. Message Center Number
     2. Messages sent as
     3. Message validity
@@ -75,7 +76,7 @@ SET1_OPTIONS
 
 #COMMON_OPTION_SUBMENU
 common_menu = """
-COMMON_OPTIONS
+        COMMON_OPTIONS
     1. Delivery Reports
     2. Delivery Via same center
     3. Character support
@@ -84,13 +85,13 @@ COMMON_OPTIONS
 
 #CHAT_MENU
 chat_menu = """
-CHAT
+        CHAT
     1. Start a chat
     """
 
 #CALL_REGISTER_MENU
 call_register_menu = """
-CALL_REGISTER
+        CALL_REGISTER
     1. Missed calls
     2. Received Calls
     3. Dialled Numbers
@@ -104,7 +105,7 @@ CALL_REGISTER
 
 #SHOW_CALL_DURATION_MENU
 show_call_duration_menu = """
-CALL_DURATIONS
+        CALL_DURATIONS
     1. Last call duration
     2. All calls Duration
     3. Received call duration
@@ -115,16 +116,16 @@ CALL_DURATIONS
 
 #SHOW_CALL_COSTS_MENU
 show_call_costs_menu = """
-CALL_COSTS
+        CALL_COSTS
     1. Last call cost
     2. All calls cost
-    5. Clear counters
+    3. Clear counters
     select an option
     """
 
 #CALL_COST_SETTINGS_MENU
 call_cost_settings_menu = """
-CALL_COST_SETTINGS
+        CALL_COST_SETTINGS
     1. Call cost limit
     2. Show cost in
     select an option
@@ -132,7 +133,7 @@ CALL_COST_SETTINGS
 
 #TONES_MENU
 tones_menu = """
-TONES_MENU
+        TONES_MENU
     1. Ringing tone
     2. Ringing Volume
     3. Incoming call alert
@@ -147,7 +148,7 @@ TONES_MENU
 
 #SETTINGS_MENU
 settings_menu = """
-SETTING_OPTIONS
+        SETTING_OPTIONS
     1. Call Settings
     2. Phone Settings
     3. Security Settings
@@ -157,7 +158,7 @@ SETTING_OPTIONS
 
 #CALL_SETTINGS_MENU
 call_settings_menu = """
-CALL_SETTINGS
+        CALL_SETTINGS
     1. Automatic redial
     2. Speed dialling
     3. Call waiting option
@@ -169,7 +170,7 @@ CALL_SETTINGS
 
 #PHONE_SETTINGS_MENU
 phone_settings_menu = """
-PHONE_SETTINGS
+        PHONE_SETTINGS
     1. Language
     2. Cell info display
     3. Welcome note
@@ -193,7 +194,7 @@ SECURITY_SETTINGS
 
 #RESTORE_FACTORY_SETTINGS_MENU
 restore_factory_settings_menu = """
-FACTORY_SETTINGS
+        FACTORY_SETTINGS
     1. Restore factory settings
     """
 
@@ -242,13 +243,145 @@ PROFILE_SETTINGS
 sim_services_menu = """
 SIM_SERVICE_OPTION
     1. SIM services
+
     """
-print(sim_services_menu)
+print(menu)
+options = int(input(" Enter a number: "))
 
-
-
-
-
+if options == 1:
+    print(phone_book_menu)
+    while True:
+        options = int(input(" Enter a number: "))
+        if options == 8:
+            print(phone_book_options)
+        elif options != 8:
+            print(phone_book_menu)
+elif options == 0:
+    print(menu)
+    
+if options == 2:
+    print(message_menu)
+    while True:
+        options = int(input(" Enter a number: "))
+        if options == 7:
+            print(message_settings_menu)
+        elif options != 7:
+            print(message_menu)
+            if options == 1:
+                print(set1_menu)
+            elif options == 2:
+                print(common_menu)
+            elif options != 1 or options != 2:
+                print(message_menu)
+    
+if options == 3:
+    print(chat_menu)
+    while True:
+        options = int(input("Enter a number:"))
+        if options != 3:
+            print(chat_menu)
+        elif options == 0:
+            print(chat_menu)
+            
+if options == 4:
+    print(call_register_menu)
+    while True:
+        options = int(input("Enter a number"))
+        if options == 5:
+            print(show_call_duration_menu)
+        elif options != 5:
+            print(call_register_menu)
+        if options == 6:
+            print(show_call_costs_menu)
+        elif options != 6:
+            print(call_register_menu)
+        if options == 7:
+            print(call_cost_settings_menu)
+        elif options != 7:
+            print(call_cost_settings_menu)
+            
+if options == 5:
+    print(tones_menu)
+    while True:
+        options = int(input("Enter a number:"))
+        if options != 5:
+            print(tones_menu)
+        elif options == 0:
+            print(tones_menu)
+            
+if options == 6:
+    print(settings_menu)      
+    while True:
+        options = int(input("Enter a number"))
+        if options == 1:
+            print(call_settings_menu)
+        elif options != 1:
+            print(call_settings_menu)
+        elif options == 2:
+            print(phone_settings_menu)
+        elif option !=2:
+            print(phone_settings_menu)
+            
+        
+        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+#while(True):
+#    if options == -1:
+#        break;
+#        
+#    match options:
+#        case 1:
+#            print(phone_book_menu)
+#            options = int(input(" Enter a number: "))
+#            if options == 8:
+#                print(phone_book_options)
+#                
+#   
+#        case 2:
+#            print(message_menu)
+#            while True:
+#                options = int(input(" Enter a number: "))
+#                if options == 7:
+#                    print(message_settings_menu)
+#                elif options != 7:
+#                    print(message_menu)
+#                options = int(input(" Enter a number: "))
+#                if options == 1:
+#                    print(set1_menu)
+#                elif options == 2:
+#                    print(common_menu)
+#                elif options != 1 or options !=2:
+#                    print(message_settings_menu)
+            
+            
+                
+            
+           
 
 
 
