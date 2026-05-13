@@ -3,9 +3,9 @@
 
 def product(args):
     result = 1
-    for num in args:
-        result *= num
+    for value in args:
+        result *= value
     return result
 
-print(product(1, 2, 3))    # 6
-print(product(5, 10, 2))   # 100
+print(product(1, 2, 3))    
+print(product(5, 10, 2))  
